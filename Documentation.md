@@ -47,6 +47,9 @@ To further bolster web server performance and enhance page loading speed, we act
 
 8) Added a shell script for stress testing: Introduced a shell script containing the following code: `sudo nice -n -20 stress-ng --cpu 2`. This script is meticulously crafted to conduct stress tests on two CPUs, assigning them high priority to achieve optimal results.
 
+![image](https://github.com/SaraGurungLABS01/Blitz_2/assets/140760966/486522b4-3216-4b36-8978-13dbe5a5e84c)
+
+
 ## Initial test Result
 
 During the QA testing, out of the 14,000 concurrent requests initiated to stress test the application, 3,864 requests did not pass, indicating the need for further investigation and optimization.
