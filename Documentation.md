@@ -9,8 +9,10 @@ The task involved deploying a new version of the URL Shortener application and e
 
 ```shell
 wget https://raw.githubusercontent.com/kura-labs-org/Template/main/blitz.sh
+```
 3) Updating the application.py file:
  - Imported logging
  - In the file or the script, we inserted the following code on line 9 to reconfigure our application. This modification redirected the output from being displayed in the terminal to a file named "app.log" for comprehensive logging:
 ```shell
 logging.basicConfig(filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
+```
