@@ -56,14 +56,23 @@ During the QA testing, out of the 14,000 concurrent requests initiated to stress
 
 CPU usage spiked at  100%
 
-![image](https://github.com/SaraGurungLABS01/Blitz_2/assets/140760966/340d052b-5bb9-48c3-8ba1-4d662f0425cf)
 
 ![image](https://github.com/SaraGurungLABS01/Blitz_2/assets/140760966/bf9a7682-fb9e-4ef5-91fd-84a3341d5870)
 
 
 ## Steps to remediate the Issue
 
-The reason why the application was not able to handle teh load is because 
+During the initial load testing, it became evident that the URL Shortener application may have been grappling with the expected traffic load. Among the 14,000 concurrent requests initiated for stress testing, a substantial portion, precisely 3,864 requests, encountered difficulties, resulting in failures. Additionally, CPU usage peaked at 100%. These observations led to speculation that the choice of the t2.micro EC2 instance type for hosting the application might be a contributing factor to these performance challenges. To mitigate this issue, the prospect of upgrading to the t2.xlarge instance type was considered. Given the performance limitations encountered with the t2.micro instance during the initial load testing, it is advisable to proceed with the upgrade to the t2.xlarge instance type. In contrast to the t2.micro's single vCPU and 1 GB of memory, the t2.xlarge presents four vCPUs and 16 GB of memory, resulting in a substantial boost in computational power and memory resources. This upgrade ensures the application's ability to adeptly manage the anticipated 14,000 concurrent users while remaining cost-effective, striking an optimal balance between heightened performance and budgetary considerations.
+
+ **Steps to change the instance typein the console**
+1) bEnsure your instance is not running.
+2) Navigate to the EC2 console and click on "Actions."
+3) Select "Change instance settings."
+4) Choose your desired instance type to initiate the upgrade process.
+
+
+
+
 
 
 
