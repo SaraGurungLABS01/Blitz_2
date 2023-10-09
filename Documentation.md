@@ -25,6 +25,7 @@ logging.basicConfig(filename='app.log', filemode='w', format='%(name)s - %(level
 5) The application was deployed on an EC2 instance of the t2.micro type. However, it's important to note that the t2 instance family, including t2.micro, is known for its burstable CPU performance, which may not be ideal for sustaining high loads due to its CPU credits system.
 
 6) **Configuring nginx**
+   
    ![image](https://github.com/SaraGurungLABS01/Blitz_2/assets/140760966/962f9493-e93e-4889-9b26-e5fe25d32edf)
 
    
@@ -42,7 +43,11 @@ To further bolster web server performance and enhance page loading speed, we act
 
 ![image](https://github.com/SaraGurungLABS01/Blitz_2/assets/140760966/77cf3732-f660-490c-9d98-132703b39355)
 
+## Initial test Result
 
+During the QA testing, out of the 14,000 concurrent requests initiated to stress test the application, 3,864 requests did not pass, indicating the need for further investigation and optimization.
+
+## Steps to remediate the Issue
 
 
 
