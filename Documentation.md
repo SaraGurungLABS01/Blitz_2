@@ -54,7 +54,16 @@ To further bolster web server performance and enhance page loading speed, we act
 
 During the QA testing, out of the 14,000 concurrent requests initiated to stress test the application, 3,864 requests did not pass, indicating the need for further investigation and optimization.
 
+CPU usage spiked at  100%
+
+![image](https://github.com/SaraGurungLABS01/Blitz_2/assets/140760966/340d052b-5bb9-48c3-8ba1-4d662f0425cf)
+
+![image](https://github.com/SaraGurungLABS01/Blitz_2/assets/140760966/bf9a7682-fb9e-4ef5-91fd-84a3341d5870)
+
+
 ## Steps to remediate the Issue
+
+The reason why the application was not able to handle teh load is because 
 
 
 
