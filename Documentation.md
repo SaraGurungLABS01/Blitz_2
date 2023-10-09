@@ -43,6 +43,10 @@ To further bolster web server performance and enhance page loading speed, we act
 
 ![image](https://github.com/SaraGurungLABS01/Blitz_2/assets/140760966/77cf3732-f660-490c-9d98-132703b39355)
 
+7) Installed a package for stress testing: Executed `sudo apt install stress-ng` to install the required package for stress testing.
+
+8) Added a shell script for stress testing: Introduced a shell script containing the following code: `sudo nice -n -20 stress-ng --cpu 2`. This script is meticulously crafted to conduct stress tests on two CPUs, assigning them high priority to achieve optimal results.
+
 ## Initial test Result
 
 During the QA testing, out of the 14,000 concurrent requests initiated to stress test the application, 3,864 requests did not pass, indicating the need for further investigation and optimization.
