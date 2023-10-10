@@ -76,7 +76,9 @@ Following the upgrade to the t2.xlarge instance type, it is anticipated that the
 
 
 
+## System Diagram
 
+![image](https://github.com/SaraGurungLABS01/Blitz_2/assets/140760966/218cadc6-ccc8-4244-90de-dd6758253c24)
 
 
    
