@@ -1,6 +1,6 @@
 ## Introduction
 
-The task involved deploying a new version of the URL Shortener application and ensuring its capacity to handle a load test with 14,000 concurrent users. The initial evaluation uncovered performance issues when subjected to heavy traffic; 3864 of them encountered failure, necessitating corrective actions. These issues were successfully addressed, and subsequent testing was conducted on an upgraded instance type, ultimately achieving the desired level of performance.
+The task at hand revolved around deploying an updated version of the URL Shortener application while ensuring its capability to accommodate a substantial load of 14,000 concurrent users. Initial evaluation exposed performance issues when subjected to a high influx of traffic, with 3,864 requests encountering failures, prompting the need for corrective measures. These challenges were effectively addressed, leading to subsequent testing on an upgraded instance type that ultimately achieved the desired level of performance.
 
 ## Configuration for testing
 
@@ -64,11 +64,22 @@ CPU usage spiked at  100%
 
 During the initial load testing, it became evident that the URL Shortener application may have been grappling with the expected traffic load. Among the 14,000 concurrent requests initiated for stress testing, a substantial portion, precisely 3,864 requests, encountered difficulties, resulting in failures. Additionally, CPU usage peaked at 100%. These observations led to speculation that the choice of the t2.micro EC2 instance type for hosting the application might be a contributing factor to these performance challenges. To mitigate this issue, the prospect of upgrading to the t2.xlarge instance type was considered. Given the performance limitations encountered with the t2.micro instance during the initial load testing, it is advisable to proceed with the upgrade to the t2.xlarge instance type. In contrast to the t2.micro's single vCPU and 1 GB of memory, the t2.xlarge presents four vCPUs and 16 GB of memory, resulting in a substantial boost in computational power and memory resources. This upgrade ensures the application's ability to adeptly manage the anticipated 14,000 concurrent users while remaining cost-effective, striking an optimal balance between heightened performance and budgetary considerations.
 
- **Steps to change the instance typein the console**
-1) bEnsure your instance is not running.
+ **Steps to change the instance type in the console**
+1) Ensure your instance is not running.
 2) Navigate to the EC2 console and click on "Actions."
 3) Select "Change instance settings."
 4) Choose your desired instance type to initiate the upgrade process.
+
+## Expected result after the upgrade
+
+Following the upgrade to the t2.xlarge instance type, it is anticipated that the server will effectively manage 100% of the anticipated traffic without encountering errors. This upgrade equips the application to confidently handle the expected load, ensuring a seamless user experience.
+
+
+
+
+
+
+   
 
 
 
