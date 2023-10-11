@@ -70,9 +70,9 @@ During the initial load testing, it became evident that the URL Shortener applic
 3) Select "Change instance settings."
 4) Choose your desired instance type to initiate the upgrade process.
 
-## Expected result after the upgrade
+## Final result after the upgrade
 
-Following the upgrade to the t2.xlarge instance type, it is anticipated that the server will effectively manage 100% of the anticipated traffic without encountering errors. This upgrade equips the application to confidently handle the expected load, ensuring a seamless user experience.
+Following the upgrade to the t2.xlarge instance type, the server was successful and effectively managed 100% of the anticipated traffic without encountering errors. This upgrade equips the application to confidently handle the expected load, ensuring a seamless user experience.
 
 
 
